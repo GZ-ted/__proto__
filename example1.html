@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+    Object.prototype.say = 'object prototype';
+    //Function.prototype.say = 'Function prototype';
+    //Array.prototype.say = 'Array prototype';
+
+    console.log('{}:'+({}).say);
+    console.log('[]:'+([]).say);
+    console.log('function(){}:'+(function(){}).say);
+    console.log('Object:'+Object.say);
+    console.log('Array:'+Array.say);
+    console.log('Function:'+Function.say);
+
+    /*********** echo --> Object.prototype.say = 'object prototype';
+    {}:object prototype cache2.html:13
+    []:object prototype cache2.html:14
+    function(){}:object prototype cache2.html:15
+    Object:object prototype cache2.html:16
+    Array:object prototype cache2.html:17
+    Function:object prototype 
+
+    ********* echo --> Function.prototype.say = 'Function prototype';
+    {}:undefined cache2.html:13
+    []:undefined cache2.html:14
+    function(){}:Function prototype cache2.html:15
+    Object:Function prototype cache2.html:16
+    Array:Function prototype cache2.html:17
+    Function:Function prototype 
+
+    ********** echo --> Array.prototype.say = 'Array prototype';
+    {}:undefined cache2.html:13
+    []:Array prototype cache2.html:14
+    function(){}:undefined cache2.html:15
+    Object:undefined cache2.html:16
+    Array:undefined cache2.html:17
+    Function:undefined
+    */
+
+    </script>
+
+  </body>
+</html>
